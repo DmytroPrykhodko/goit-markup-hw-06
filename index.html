@@ -382,16 +382,18 @@
         </div>
     </div>
     </footer>
+
+    <!-- Бекдроп и модалка -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal form">
                         
             <button data-modal-close class="button-close">
                 <span class="close">&#10005;</span>
             </button>
-            <form></form>
+            <form>
              <h2 class="form-header">Оставьте свои данные, мы вам перезвоним</h2>
                 <div class="form-item">
-                    <label for="name">Имя</label>
+                    <label class="form-label" for="name">Имя</label>
                     <div class="form-field">
                         <input class="form-input" type="text" name="name" id="name"/>
                         <svg class="form-icon" width="18px" height="18px">
@@ -399,9 +401,9 @@
                         </svg>
                     </div>
                 </div>
-            </form>
+            
             <div class="form-item">
-                <label for="phone">Телефон</label>
+                <label class="form-label" for="phone">Телефон</label>
                 <div class="form-field">
                     <input class="form-input" type="tel" name="phone" id="phone"/>
                     <svg class="form-icon" width="18px" height="18px">
@@ -410,7 +412,7 @@
                 </div>
             </div>
             <div class="form-item">
-                <label for="mail">Почта</label>
+                <label class="form-label" for="mail">Почта</label>
                 <div class="form-field">
                     <input class="form-input" type="email" name="mail" id="mail"/>
                     <svg class="form-icon" width="18px" height="18px">
@@ -419,12 +421,26 @@
                 </div>
             </div>
             <div class="form-item">
-                <label for="feedback">Комментарий</label>
-                <textarea name="feedback" id="feedback" rows="5" placeholder=""></textarea>
+                <label class="form-label" for="feedback">Комментарий</label>
+                <textarea name="feedback" id="feedback" rows="6" placeholder="Введите текст"></textarea>
             </div>
-            <p></p>
-            <button></button>
+
+            <div class="agreement">
+                <label class="agreement-label">
+                <input class="checkbox" type="checkbox" name="agree">
+                <span class="agreement-icon">
+                   </span>
+                <span class="agreement-text"> Соглашаюсь с рассылкой и принимаю
+                <a class="agreement-link" href="" target="_blank" rel="noreferrer noopener">Условия договора</a>
+                </label>
+            </span>
+            <button type="submit" class="btn-send">Отправить</button>
             </div>
+        
+            
+            </form>
+            </div>
+          
         </div>
      
    
